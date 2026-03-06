@@ -1,80 +1,71 @@
 # EUSAiR Initial Assessment: HJS Protocol Implementation 🇪🇺
 
+## 1. Regulatory Compliance Mapping (EU AI Act)
+
+HJS provides the technical implementation layer required for high-risk AI systems under the European AI Act:
+
 | **EU AI Act Clause** | **Regulatory Requirement** | **HJS Technical Implementation** | **Verification Evidence** |
 | --- | --- | --- | --- |
-| **Article 12** | **Record-keeping** | Chronological sequencing via **UUIDv7 (RFC 9562)** | [Technical Proof](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/IMMUTABILITY_PROOF.md) |
-| **Article 13** | **Transparency** | Standardized metadata wrapper for cross-platform AI calls | [Mapping Guide](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/EU_AI_ACT_MAPPING.md) |
-| **Article 14** | **Human Oversight** | Cryptographic non-repudiation using **Ed25519 signatures** | **[Live Execution Demo](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/compliance_demo.py)** |
-| **Article 15** | **Accuracy & Security** | Decentralized Sidecar for local execution & sovereignty | **[Technical Whitepaper (PDF)](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/HJS_Whitepaper_EU_AI_Act_Compliance_v1.0.pdf)** |
+| **Article 12** | **Record-keeping** | Chronological sequencing via **UUIDv7 (RFC 9562)** | [Technical Proof](https://www.google.com/search?q=./IMMUTABILITY_PROOF.md) |
+| **Article 13** | **Transparency** | Standardized metadata wrapper (**JSON-LD/RDF**) | [Mapping Guide](https://www.google.com/search?q=./EU_AI_ACT_MAPPING.md) |
+| **Article 14** | **Human Oversight** | Non-repudiation via **Ed25519 Cryptographic Signatures** | **[Live Demo](https://www.google.com/search?q=./compliance_demo.py)** |
+| **Article 15** | **Security & Robustness** | **Decentralized Sidecar** for localized sovereignty | **[Whitepaper (PDF)](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/HJS_Whitepaper_EU_AI_Act_Compliance_v1.0.pdf)** |
 
 ---
 
-## 🌐 The HJS Technical Implementation Framework
+## 2. The Four Primitives: Logic Completeness
 
+As defined in `draft-wang-hjs-judgment-event`, HJS abstracts AI accountability into four atomic primitives:
 
-HJS  is designed as a **Universal Anchoring Layer**. We recognize the immense contributions of AI pioneers and standard-setting bodies (such as OpenAI, IEEE, and ISO), providing the "Final Mile" of **technical implementation** required for legal and physical accountability.
-
-### 1. Mathematical Implementation: Data Integrity
-
-* **Mechanism**: **Ed25519 (RFC 8032)** Edwards-curve Digital Signature Algorithm.
-* **Methodology**: HJS provides the **mathematical implementation** to "seal" AI intelligence. By replacing subjective "trust" with objective cryptographic proofs, we ensure that the operational outputs of any AI system remain immutable and verifiable across global borders.
-
-### 2. Physical Implementation: Temporal Traceability
-
-* **Mechanism**: **RFC 9562 (UUIDv7)** Millisecond-Precision Sequencing.
-* **Methodology**: Digital intelligence operates in a fluid state; HJS anchors this behavior into the irreversible flow of physical time. By hardcoding Unix-epoch timestamps into every judgment identifier, we provide the "Temporal Fact" necessary for mandatory record-keeping (**Art. 12**).
-
-### 3. Sovereign & Privacy Implementation: Public Anchor, Private Privacy
-
-* **Mechanism**: **Decentralized Sidecar Deployment** + **SHA-256 Hashing**.
-* **Methodology**: HJS implements a **"Blind Judge"** architecture. We only process **Metadata** (transaction context) rather than **Payloads** (business content). By deploying the HJS Sidecar locally, we ensure sensitive data never leaves the user's jurisdiction while providing a public cryptographic "fingerprint" for auditability, satisfying both **Art. 15** and **GDPR**.
+* **Judge**: Establishing the accountability basis and policy logic.
+* **Delegate**: **Core Innovation**. Tracking the dynamic transfer of responsibility between human and AI agents.
+* **Terminate**: Locking the final state and output hash to close the accountability loop.
+* **Verify**: Providing independent, cryptographic proof for third-party auditing.
 
 ---
 
-## 🚀 Future Guidance: The Interoperable Accountability Roadmap
+## 3. Integration: Deployment & Efficiency (接入方式与时间)
 
-HJS provides the technical blueprint for a future where innovation and regulation are no longer in conflict:
+HJS is engineered for **"Zero-Friction"** adoption by enterprises and regulators:
 
-* **Complementary Implementation**: HJS does not compete with AI model intelligence. We provide the **Physical and Mathematical Evidence Layer** that allows that intelligence to be deployed safely and legally in high-risk regulated environments.
-* **Standardized Accountability**: We invite all industry participants to utilize HJS as a neutral, non-intrusive interface, transforming fragmented AI "black boxes" into a transparent, interoperable ecosystem of responsible agents.
+### A. Integration Method (接入方式)
+
+* **Non-Intrusive Sidecar**: HJS runs as a localized container (Sidecar) alongside your AI Proxy.
+* **Zero Code Change**: It intercepts metadata via standardized API hooks. You do **not** need to retrain models or modify core business logic.
+* **Sovereign Hosting**: Can be deployed **On-premise** or within a **Private Cloud** in the EU, ensuring data never leaves the required jurisdiction.
+
+### B. Integration Time (接入时间)
+
+* **Standard Setup**: **< 15 Minutes**. (Pulling the Docker image and configuring the Policy Hash).
+* **Compliance Validation**: **Real-time**. Once connected, every AI interaction generates an immediate, signed compliance receipt.
+
+---
+
+## 4. Core Pillars of HJS
+
+* **Machine & Human Readability**: Structured for automated auditing while remaining transparent to human supervisors.
+* **Privacy vs. Traceability**: **"Public Anchor, Private Privacy."** We anchor cryptographic hashes publicly while keeping sensitive business payloads strictly local.
+* **Open Source & Neutrality**: Managed by the **HJS Foundation (Singapore)** as a non-profit public good, ensuring protocol independence.
 
 ---
 
 ## 🛠️ Compliance Evidence & Artifacts
 
-These resources provide the **Technical Documentation** required for high-risk AI system assessment:
-
-1. **📄 [EU_AI_ACT_MAPPING.md**](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/EU_AI_ACT_MAPPING.md): Clause-by-clause alignment with European standards.
-2. **💻 [compliance_demo.py**](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/compliance_demo.py): **Live Demo for Article 14**, demonstrating an immutable audit trail.
-3. **📂 [Scenario Sandbox**](https://www.google.com/search?q=./scenarios/): Practical "Approved vs. Denied" logic for regulatory sandboxing.
-4. **📕 [Technical Whitepaper (PDF)**](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/HJS_Whitepaper_EU_AI_Act_Compliance_v1.0.pdf): Comprehensive Reference Architecture for the EUSAiR pilot.
-
----
-
-## 🏛️ Institutional Backing & Stability
-
-The **HJS Foundation LTD (Singapore)** provides the non-profit legal anchor to ensure the protocol remains a **neutral public good**.
-
-* **Neutrality**: Organized as a CLG (Company Limited by Guarantee) with no profit distribution.
-* **Independence**: Mandatory 1/3 independent director ratio (Constitution Art. 35A).
-* **Sustainability**: Core IP and protocol assets are permanently locked (Constitution Art. 67A).
+1. **📄 [EU_AI_ACT_MAPPING.md**](https://www.google.com/search?q=./EU_AI_ACT_MAPPING.md): Clause-by-clause alignment.
+2. **💻 [compliance_demo.py**](https://www.google.com/search?q=./compliance_demo.py): **Live Execution for Art. 14 Verification**.
+3. **📕 [Technical Whitepaper (PDF)**](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/HJS_Whitepaper_EU_AI_Act_Compliance_v1.0.pdf): Complete Reference Architecture.
 
 ---
 
 ## 🚀 Quick Start for Auditors
 
-To verify the protocol's implementation logic locally:
-
 ```bash
-# Install dependencies
+# Verify the implementation logic in seconds
 pip install -r requirements.txt
-# Run the compliance evidence generator (Verification for Art. 14)
 python compliance_demo.py
 
 ```
 
----
-
-*Prepared for the EUSAiR Initial Assessment Phase.* **Primary Contact:** [signal@humanjudgment.org](mailto:signal@humanjudgment.org)
+*Prepared for EUSAiR Phase 1.* **Contact:** [signal@humanjudgment.org](mailto:signal@humanjudgment.org)
 
 **Legal Entity:** HJS Foundation LTD (Singapore)
