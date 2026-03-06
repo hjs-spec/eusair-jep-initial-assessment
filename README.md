@@ -19,7 +19,7 @@ The HJS Protocol is governed by a **Company Limited by Guarantee (CLG)** in Sing
 This branch provides a technical baseline for aligning with the **EU AI Act**.
 
 ### 🛠️ Compliance Resources
-- **[View Signed Constitution (PDF)](docs/Constitution_Human_Judgment_Systems_Foundation_Ltd_signed.pdf)**
+- **[⚖️ View Foundation Constitution (Signed PDF)](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/Constitution_Human%20Judgment%20Systems%20Foundation%20Ltd_signed.pdf)**
 - **🔍 [Regulatory Mapping](./EU_AI_ACT_MAPPING.md)**: Direct technical alignment with Art. 12, 13, and 14.
 - **💻 [Traceability Demo](./compliance_demo.py)**: Live execution of UUIDv7 + Ed25519 evidence chain.
 
