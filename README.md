@@ -1,18 +1,17 @@
-# EUSAiR HJS Compliance Sandbox 🇪🇺
+# EUSAiR Initial Assessment: HJS Protocol 🇪🇺
 
-Welcome to the dedicated regulatory sandbox for the **Heterogeneous Judgment Service (HJS)**. This repository is specifically structured for the **EUSAiR Pilot Program** (March 2026).
+This repository is prepared for the **Initial Meeting with EUSAiR (March 11, 2026)**. It provides a technical overview of how the **Heterogeneous Judgment Service (HJS)** addresses regulatory challenges in the context of the **EU AI Act**.
 
-## 🎯 Purpose
-This sandbox serves as a "Controlled Environment" to verify the technical feasibility of AI accountability under the **EU AI Act**. It focuses on:
-- **Traceability** (Art. 12) via UUIDv7.
-- **Transparency** (Art. 13) via Policy Binding.
-- **Human Oversight** (Art. 14) via Ed25519 Signatures.
+## 📍 Meeting Objectives
+- **System Presentation**: Briefing on the HJS "Sidecar" architecture.
+- **Regulatory Mapping**: Cross-referencing technical features with Art. 12, 13, and 14 of the EU AI Act.
+- **Sandbox Feasibility**: Discussing the integration path for potential digital sandboxing.
 
-## 📂 Sandbox Contents
-- `/docs/legal-mapping`: Detailed alignment with EU regulatory requirements.
-- `/simulations`: Pre-configured scenarios for high-risk AI tool calls.
-- `/audit-vault`: Sample verifiable receipts for EUSAiR review.
+## 🛠️ Key Regulatory Artifacts
+To facilitate our discussion with Marco Billi and the EUSAiR team, we have prepared:
+1. **[Legal Mapping](./docs/EU_AI_ACT_MAPPING.md)**: Technical alignment with European transparency standards.
+2. **[HJS Receipt Schema](./src/models.py)**: How we ensure verifiable accountability.
+3. **[Cryptographic Foundation](./src/crypto.py)**: Leveraging RFC 9562 (UUIDv7) for audit-ready logging.
 
-## 🤝 Stakeholders
-- **Lead Researcher**: Marco Billi (University of Bologna / CIRSFID)
-- **Developer**: Cognitive Emergence Lab / HJS Foundation
+---
+*Prepared by the Cognitive Emergence Lab / HJS Foundation.*
