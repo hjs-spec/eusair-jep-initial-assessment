@@ -28,7 +28,7 @@ This matrix provides a direct bridge between the legal mandates of the **EU AI A
 
 ### <span id="integration"></a>C. Engineering Velocity & Integration
 
-* **Non-Intrusive Integration**: Operates as a transparent proxy. It requires **zero modification** to existing AI models (e.g., GPT-4, Llama 3) or core business logic.
+* **Non-Intrusive Integration**: Operates as a transparent proxy. It requires **zero modification** to existing AI models (e.g., GPT-5, Llama 3) or core business logic.
 * **Deployment Time**: Standard production environment setup is achieved in **< 15 minutes** via Docker or Kubernetes.
 * **Zero Overhead**: Minimal latency impact, ensuring compliance does not compromise AI performance.
 
