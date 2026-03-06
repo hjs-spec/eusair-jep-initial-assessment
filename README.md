@@ -47,10 +47,10 @@ HJS provides the technical blueprint for a future where innovation and regulatio
 
 These resources provide the **Technical Documentation** required for high-risk AI system assessment:
 
-1. **📄 [EU_AI_ACT_MAPPING.md**](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/EU_AI_ACT_MAPPING.md): Clause-by-clause alignment with European standards.
-2. **💻 [compliance_demo.py**](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/compliance_demo.py): **Live Demo for Article 14**, demonstrating an immutable audit trail.
-3. **📂 [Scenario Sandbox**](https://www.google.com/search?q=./scenarios/): Practical "Approved vs. Denied" logic for regulatory sandboxing.
-4. **📕 [Technical Whitepaper (PDF)**](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/HJS_Compliance_Whitepaper_Initial_Assessment.md.pdf): Comprehensive technical specifications for the EUSAiR pilot.
+1. 📄 [EU_AI_ACT_MAPPING.md**](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/EU_AI_ACT_MAPPING.md): Clause-by-clause alignment with European standards.
+2. 💻 [compliance_demo.py**](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/compliance_demo.py): **Live Demo for Article 14**, demonstrating an immutable audit trail.
+3. 📂 [Scenario Sandbox**](https://www.google.com/search?q=./scenarios/): Practical "Approved vs. Denied" logic for regulatory sandboxing.
+4. 📕 [Technical Whitepaper (PDF)**](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/HJS_Compliance_Whitepaper_Initial_Assessment.md.pdf): Comprehensive technical specifications for the EUSAiR pilot.
 
 ---
 
