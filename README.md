@@ -2,7 +2,7 @@
 
 | **EU AI Act Clause** | **Regulatory Requirement** | **HJS Technical Implementation** | **Verification Evidence** |
 | --- | --- | --- | --- |
-| **Article 12** | **Record-keeping** | Chronological sequencing via **UUIDv7 (RFC 9562)** | [View Proof](https://www.google.com/search?q=./IMMUTABILITY_PROOF.md) |
+| **Article 12** | **Record-keeping** | Chronological sequencing via **UUIDv7 (RFC 9562)** | [View Proof]([https://www.google.com/search?q=./IMMUTABILITY_PROOF.md](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/IMMUTABILITY_PROOF.md)) |
 | **Article 13** | **Transparency** | Standardized metadata wrapper for cross-platform AI calls | [Mapping Guide](https://www.google.com/search?q=./EU_AI_ACT_MAPPING.md) |
 | **Article 14** | **Human Oversight** | Cryptographic non-repudiation using **Ed25519 signatures** | [Audit Demo](https://www.google.com/search?q=./compliance_demo.py) |
 | **Article 15** | **Accuracy & Security** | Decentralized Sidecar for local execution & sovereignty | [Whitepaper (PDF)](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/HJS_Compliance_Whitepaper_Initial_Assessment.md.pdf) |
