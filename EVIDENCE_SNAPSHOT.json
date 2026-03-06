@@ -1,7 +1,7 @@
 {
-  "proof_type": "HJS_Accountability_Receipt",
-  "evidence_id": "hjs_018e154c-...", 
+  "proof_type": "JEP_Accountability_Receipt",
+  "evidence_id": "jep_018e154c-...",
   "neutrality_check": "No PII detected in context",
   "integrity_status": "VERIFIED_BY_ED25519",
-  "comment": "This JSON object is the only artifact HJS generates. It contains NO business data, only metadata for legal accountability."
+  "comment": "This JSON object is the only artifact JEP generates. It contains NO business data, only metadata for legal accountability."
 }
