@@ -1,6 +1,6 @@
 # HJS Technical Alignment with EU AI Act (Initial Assessment)
 
-This document outlines how the **HJS Sidecar Architecture** serves as the technical enforcement layer for compliance with the **EU AI Act**, emphasizing **National Sovereignty**, the balance of **Public & Private Rights**, and the protocol's status as a **Global Public Good**.
+This document outlines how the **HJS Sidecar Architecture** serves as the technical enforcement layer for compliance with the **EU AI Act**, emphasizing **National Sovereignty**, the balance of **Public & Private Rights**, and the protocol's core philosophy as a **Global Public Good**.
 
 ---
 
@@ -9,7 +9,7 @@ This document outlines how the **HJS Sidecar Architecture** serves as the techni
 * **Requirement**: Mandatory automatic recording of events (logging) to ensure traceability.
 * **HJS Implementation**: **Physical Anchoring via UUIDv7 (RFC 9562)**
 * **Engineering Fact**: Utilizing a 48-bit Unix-epoch timestamp as the primary key prefix to anchor every "Judgment Event" to physical time.
-* **Sovereignty Note**: Logs are generated and sequestered within the **Local Sovereign Jurisdiction**. This ensures that the "Memory of AI" remains under the control of the state where it is deployed, preventing foreign data extraction.
+* **Sovereignty Note**: Logs are generated and sequestered within the **Local Sovereign Jurisdiction**. This ensures that the "Memory of AI" remains under the control of the state where it is deployed, preventing unauthorized foreign data extraction.
 
 
 
@@ -52,24 +52,24 @@ This document outlines how the **HJS Sidecar Architecture** serves as the techni
 
 ---
 
-## 5. Institutional Neutrality & Public Good
+## 5. Core Philosophy: Institutional Neutrality & Public Good
 
-HJS is not a commercial product; it is a **Global Accountability Infrastructure**.
+HJS is not a commercial product; it is a **Global Accountability Infrastructure** driven by a commitment to digital justice.
 
-* **Non-Profit Governance**: The HJS Protocol is managed by the **HJS Foundation LTD (Singapore)**, a Company Limited by Guarantee (CLG). As a non-profit entity with no shareholders, its sole mission is the maintenance of the protocol as a neutral utility.
+* **Non-Profit Philosophy**: The HJS Protocol is managed by the **HJS Foundation LTD (Singapore)**, a Company Limited by Guarantee (CLG). As a non-profit entity with no shareholders, our philosophy is to maintain the protocol as a neutral, third-party utility for all humanity.
 * **Respect for Dual Rights**:
-* **Public Interest**: We provide the "Chain of Responsibility" for the safety of the digital society.
-* **Private Sovereignty**: We respect the individual’s right to privacy and the state’s right to digital self-determination.
+* **Public Interest**: Our vision is to provide a permanent "Chain of Responsibility" for the safety of the digital society.
+* **Private Sovereignty**: We respect the individual’s right to privacy and the state’s right to digital self-determination as fundamental human rights.
 
 
-* **Open Standard**: By keeping the core protocol open-source and foundation-led, HJS ensures that no single corporation or nation can monopolize the "Judgment of AI," making it a true **Global Public Good**.
+* **Open Standard for All**: By keeping the core protocol open-source and foundation-led, HJS ensures that no single corporation or nation can monopolize the "Judgment of AI," making it a true **Global Public Good**.
 
 ---
 
 ### 🚀 Auditor Quick Reference
 
 * **Protocol Version**: HJS-v1.0
-* **Institutional Status**: Foundation-led (Non-profit CLG)
+* **Institutional Philosophy**: Foundation-led (Non-profit CLG), Public Good mission.
 * **Sovereignty Compliance**: Supports localized, air-gapped node execution.
 * **Privacy Compliance**: GDPR-ready (Hash-based evidence).
 
