@@ -42,6 +42,6 @@ JEP is designed to be infrastructure-agnostic, preventing vendor lock-in and res
 ### 3. Sovereign Boundary Enforcement
 
 * **Local Authority**: Because the JEP Sidecar is deployed within the user’s own infrastructure, the **Regulatory Anchor** remains under the user's sole jurisdictional control.
-* **Neutrality Fact**: Neither the JEP Foundation nor any third-party commercial entity has back-door access to the local Sidecar or its cryptographic keys. **Control is anchored locally, while accountability is provable globally.**
+* **Neutrality Fact**: Neither the HJS Foundation nor any third-party commercial entity has back-door access to the local Sidecar or its cryptographic keys. **Control is anchored locally, while accountability is provable globally.**
 
 ---
