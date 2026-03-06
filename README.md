@@ -7,7 +7,6 @@
 | **Article 14** | **Human Oversight** | Cryptographic non-repudiation using **Ed25519 signatures** | **[Live Execution Demo](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/compliance_demo.py)** |
 | **Article 15** | **Accuracy & Security** | Decentralized Sidecar for local execution & sovereignty | **[Technical Whitepaper (PDF)](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/HJS_Compliance_Whitepaper_Initial_Assessment.md.pdf)** |
 
----
 
 ## 🌐 The HJS Technical Implementation Framework
 
@@ -30,7 +29,6 @@ HJS  is designed as a **Universal Anchoring Layer**. We recognize the immense co
 * **Mechanism**: **Decentralized Sidecar Deployment**.
 * **Methodology**: HJS provides a **technical implementation** that respects the diversity of national legal systems. Our architecture allows sovereign entities (such as EUSAiR) to deploy local "Logic Gateways." This ensures that while AI models remain global, their **Enforcement and Compliance** remain local, respecting regional digital sovereignty.
 
----
 
 ## 🚀 Future Guidance: The Interoperable Accountability Roadmap
 
@@ -41,7 +39,6 @@ HJS provides the technical blueprint for a future where innovation and regulatio
 
 > *"HJS provides the **Technical Implementation** to ensure that AI intelligence remains grounded in the objective laws of mathematics, physics, and human society."*
 
----
 
 ## 🛠️ Compliance Evidence & Artifacts
 
@@ -52,7 +49,6 @@ These resources provide the **Technical Documentation** required for high-risk A
 3. 📂 [Scenario Sandbox](https://www.google.com/search?q=./scenarios/): Practical "Approved vs. Denied" logic for regulatory sandboxing.
 4. 📕 [Technical Whitepaper (PDF)](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/HJS_Compliance_Whitepaper_Initial_Assessment.md.pdf): Comprehensive technical specifications for the EUSAiR pilot.
 
----
 
 ## 🏛️ Institutional Backing & Stability
 
@@ -62,7 +58,6 @@ The **HJS Foundation LTD (Singapore)** provides the non-profit legal anchor to e
 * **Independence**: Mandatory 1/3 independent director ratio (Constitution Art. 35A).
 * **Sustainability**: Core IP and protocol assets are permanently locked (Constitution Art. 67A).
 
----
 
 ## 🚀 Quick Start for Auditors
 
@@ -77,7 +72,6 @@ python compliance_demo.py
 
 ```
 
----
 
 *Prepared for the EUSAiR Initial Assessment Phase.* **Primary Contact:** [signal@humanjudgment.org](mailto:signal@humanjudgment.org)
 **Legal Entity:** HJS Foundation LTD (Singapore)
