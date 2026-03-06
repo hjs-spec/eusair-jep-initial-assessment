@@ -20,7 +20,7 @@ To facilitate a practical review, we have prepared the following:
 1. **[Technical Mapping](./EU_AI_ACT_MAPPING.md)**: A clause-by-clause alignment with European standards.
 2. **[Traceability Demo](./compliance_demo.py)**: A running example of an immutable audit trail.
 3. **[Scenario Sandbox](./scenarios/)**: Practical demonstrations of "Approved" vs. "Denied" regulatory logic.
-4. **[Operational Whitepaper (PDF)](../../releases/download/v1.0.0-assessment/HJS_Compliance_Whitepaper_v1.0.pdf)**: Detailed technical specifications for the EUSAiR pilot.
+4. **[Operational Whitepaper (PDF)](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/HJS_Compliance_Whitepaper_v1.0.pdf)**: Detailed technical specifications for the EUSAiR pilot.
 
 ---
 
