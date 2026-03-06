@@ -55,7 +55,7 @@ This document outlines how the **JEP Sidecar Architecture** serves as the techni
 ## 5. Core Philosophy: Institutional Neutrality & Public Good
 * JEP is not a commercial product; it is a Global Accountability Infrastructure driven by a commitment to digital justice.
 
-* Non-Profit Philosophy: The HJS Protocol is managed by the HJS Foundation LTD (Singapore), a Company Limited by Guarantee (CLG). As a non-profit entity with no shareholders, our philosophy is to maintain the protocol as a neutral utility for all humanity.
+* Non-Profit Philosophy: The JEP Protocol is managed by the HJS Foundation LTD (Singapore), a Company Limited by Guarantee (CLG). As a non-profit entity with no shareholders, our philosophy is to maintain the protocol as a neutral utility for all humanity.
 
 * Separation of Powers (Governance): To ensure absolute integrity, HJS adopts a "Standard vs. Implementation" separation model.
 
