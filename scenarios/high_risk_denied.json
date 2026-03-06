@@ -5,13 +5,13 @@
     "resource": "db://user-biometrics-v2",
     "risk_level": "CRITICAL",
     "actor_id": "agent-marketing-v4",
-    "policy_uri": "https://hjs-spec.org/eu/privacy-protection.hjs"
+    "policy_uri": "https://jep-protocol.org/eu/privacy-protection.jep"
   },
-  "hjs_judgment": {
+  "jep_judgment": {
     "status": "DENIED",
     "reason_code": "EU_AI_ACT_ART10_VIOLATION",
     "message": "Access denied: Target resource requires Tier-1 compliance certification, which the actor lacks.",
-    "receipt_id": "hjs_018e154b-d7a2-7b5e-9f3c-8a2b3c4d5e6f",
+    "receipt_id": "jep_018e154b-d7a2-7b5e-9f3c-8a2b3c4d5e6f",
     "issued_at": "2026-03-05T21:05:00Z"
   }
 }
