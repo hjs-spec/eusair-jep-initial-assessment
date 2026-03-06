@@ -57,7 +57,7 @@ This document outlines how the **JEP Sidecar Architecture** serves as the techni
 
 * Non-Profit Philosophy: The JEP Protocol is managed by the HJS Foundation LTD (Singapore), a Company Limited by Guarantee (CLG). As a non-profit entity with no shareholders, our philosophy is to maintain the protocol as a neutral utility for all humanity.
 
-* Separation of Powers (Governance): To ensure absolute integrity, HJS adopts a "Standard vs. Implementation" separation model.
+* Separation of Powers (Governance): To ensure absolute integrity, JEP adopts a "Standard vs. Implementation" separation model.
 
 * The Foundation focuses exclusively on protocol governance, mathematical standards, and public audit integrity.
 
