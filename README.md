@@ -8,6 +8,7 @@
 | **Article 15** | **Accuracy & Security** | Decentralized Sidecar for local execution & sovereignty | **[Technical Whitepaper (PDF)](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/HJS_Compliance_Whitepaper_Initial_Assessment.md.pdf)** |
 
 
+
 ## 🌐 The HJS Technical Implementation Framework
 
 ### *Harmonizing Global Intelligence with Physical & Sovereign Reality*
@@ -30,6 +31,7 @@ HJS  is designed as a **Universal Anchoring Layer**. We recognize the immense co
 * **Methodology**: HJS provides a **technical implementation** that respects the diversity of national legal systems. Our architecture allows sovereign entities (such as EUSAiR) to deploy local "Logic Gateways." This ensures that while AI models remain global, their **Enforcement and Compliance** remain local, respecting regional digital sovereignty.
 
 
+
 ## 🚀 Future Guidance: The Interoperable Accountability Roadmap
 
 HJS provides the technical blueprint for a future where innovation and regulation are no longer in conflict:
@@ -38,6 +40,7 @@ HJS provides the technical blueprint for a future where innovation and regulatio
 * **Standardized Accountability**: We invite all industry participants to utilize HJS as a neutral interface, transforming fragmented AI "black boxes" into a transparent, interoperable ecosystem of responsible agents.
 
 > *"HJS provides the **Technical Implementation** to ensure that AI intelligence remains grounded in the objective laws of mathematics, physics, and human society."*
+
 
 
 ## 🛠️ Compliance Evidence & Artifacts
@@ -50,6 +53,7 @@ These resources provide the **Technical Documentation** required for high-risk A
 4. 📕 [Technical Whitepaper (PDF)](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/HJS_Compliance_Whitepaper_Initial_Assessment.md.pdf): Comprehensive technical specifications for the EUSAiR pilot.
 
 
+
 ## 🏛️ Institutional Backing & Stability
 
 The **HJS Foundation LTD (Singapore)** provides the non-profit legal anchor to ensure the protocol remains a **neutral public good**.
@@ -57,6 +61,7 @@ The **HJS Foundation LTD (Singapore)** provides the non-profit legal anchor to e
 * **Neutrality**: Organized as a CLG (Company Limited by Guarantee) with no profit distribution.
 * **Independence**: Mandatory 1/3 independent director ratio (Constitution Art. 35A).
 * **Sustainability**: Core IP and protocol assets are permanently locked (Constitution Art. 67A).
+
 
 
 ## 🚀 Quick Start for Auditors
