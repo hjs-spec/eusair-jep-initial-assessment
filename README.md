@@ -1,4 +1,4 @@
-# HJS: Technical Reference for EUSAiR Compliance Assessment 🇪🇺
+# Technical Reference for EUSAiR Compliance Assessment 🇪🇺
 
 ## 1. Regulatory Compliance Mapping
 
