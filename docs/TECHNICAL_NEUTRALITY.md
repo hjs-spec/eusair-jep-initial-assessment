@@ -35,7 +35,7 @@ JEP is designed to be infrastructure-agnostic, preventing vendor lock-in and res
 * The Sidecar does not maintain a persistent database of business transactions. Each judgment is an independent cryptographic event.
 
 
-* **Compliance Value**: This ensures that HJS remains a neutral utility. It provides a standardized "Accountability Layer" that can move with the enterprise across different technological environments without losing the audit trail's continuity.
+* **Compliance Value**: This ensures that JEP remains a neutral utility. It provides a standardized "Accountability Layer" that can move with the enterprise across different technological environments without losing the audit trail's continuity.
 
 ---
 
