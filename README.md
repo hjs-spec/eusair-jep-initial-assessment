@@ -5,7 +5,7 @@
 | **Article 12** | **Record-keeping** | Chronological sequencing via **UUIDv7 (RFC 9562)** | [Technical Proof](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/IMMUTABILITY_PROOF.md) |
 | **Article 13** | **Transparency** | Standardized metadata wrapper for cross-platform AI calls | [Mapping Guide](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/EU_AI_ACT_MAPPING.md) |
 | **Article 14** | **Human Oversight** | Cryptographic non-repudiation using **Ed25519 signatures** | **[Live Execution Demo](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/compliance_demo.py)** |
-| **Article 15** | **Accuracy & Security** | Decentralized Sidecar for local execution & sovereignty | **[Technical Whitepaper (PDF)](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/HJS_Compliance_Whitepaper_Initial_Assessment.md.pdf)** |
+| **Article 15** | **Accuracy & Security** | Decentralized Sidecar for local execution & sovereignty | **[Technical Whitepaper (PDF)]([https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/HJS_Compliance_Whitepaper_Initial_Assessment.md.pdf](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/HJS_Whitepaper_EU_AI_Act_Compliance_v1.0.pdf))** |
 
 
 
