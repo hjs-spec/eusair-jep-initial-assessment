@@ -63,7 +63,7 @@ Example of a **Judgment Receipt** compliant with Article 13 requirements:
 * 📄 **[IMMUTABILITY_PROOF.md](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/IMMUTABILITY_PROOF.md)**: Proof of non-repudiation.
 * 📄 **[EU_AI_ACT_MAPPING.md](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/EU_AI_ACT_MAPPING.md)**: Regulatory field mapping.
 * 💻 **[compliance_demo.py](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/compliance_demo.py)**: Live execution of Article 14 oversight.
-* 📕 **[JEP_Whitepaper_v1.0.pdf](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/HJS_Whitepaper_EU_AI_Act_Compliance_v1.0.pdf)**: Complete architectural reference.
+* 📕 **[JEP_Whitepaper_v1.0.pdf](https://github.com/hjs-spec/eusair-jep-initial-assessment/blob/main/docs/JEP_Whitepaper_EU_AI_Act_Compliance_v1.0.pdf.pdf)**: Complete architectural reference.
 
 ---
 
