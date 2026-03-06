@@ -1,73 +1,88 @@
 # Technical Reference for EUSAiR Compliance Assessment 🇪🇺
 
-## 1. EUSAiR Regulatory Requirement Mapping
+## 1. Requirement Traceability Matrix (EUSAiR/EU AI Act)
 
-HJS provides the technical evidence layer required for the **EUSAiR Initial Assessment**, ensuring high-risk AI systems meet the mandatory standards of the **EU AI Act**.
+HJS provides the technical evidence layer required for high-risk AI systems to meet the mandatory standards of the **EU AI Act**.
 
-| **EUSAiR Assessment Focus** | **Technical Fact** | **Protocol / Standard** |
+| **Regulatory Requirement** | **HJS Technical Implementation** | **Standard / Protocol** |
 | --- | --- | --- |
-| **Article 12: Traceability** | 48-bit Unix-epoch physical time-sequencing. | **UUIDv7 (RFC 9562)** |
-| **Article 13: Transparency** | Machine-readable metadata encapsulation. | **JSON-LD / RDF** |
-| **Article 14: Oversight** | Cryptographic non-repudiation of human agency. | **Ed25519 (RFC 8032)** |
-| **Article 15: Sovereignty** | Localized sidecar execution with data isolation. | **SHA-256 / Decentralized Proxy** |
+| **Art. 12: Record-keeping** | [48-bit Unix-epoch Physical Sequencing](https://www.google.com/search?q=%233a-mathematical--physical-anchoring) | **UUIDv7 (RFC 9562)** |
+| **Art. 13: Transparency** | [Standardized Metadata Encapsulation](https://www.google.com/search?q=%236-evidence-sample--verification) | **JSON-LD / RDF** |
+| **Art. 14: Oversight** | [Cryptographic Non-repudiation](https://www.google.com/search?q=%233a-mathematical--physical-anchoring) | **Ed25519 (RFC 8032)** |
+| **Art. 15: Sovereignty** | [Localized Sidecar Execution & Isolation](https://www.google.com/search?q=%233b-environmental--sovereign-anchoring) | **SHA-256 / Proxy** |
 
 ---
 
-## 2. Technical Operations (IETF `draft-wang-hjs-judgment-event`)
+## 2. The Four Primitives (Functional Logic)
 
-The HJS protocol processes AI interactions through four atomic operations to ensure a complete chain of custody for EUSAiR auditors:
+According to `draft-wang-hjs-judgment-event`, the HJS protocol ensures a complete chain of custody via four atomic operations:
 
-* **Judge**: Records the policy parameters and logic invoked by the AI.
-* **Delegate**: Captures the cryptographic handover of authority from the user to the agent.
-* **Terminate**: Logs the task completion and hashes the resulting output.
-* **Verify**: Generates a standalone, portable compliance receipt for external auditing.
+* **Judge**: Logs the policy parameters and logical basis invoked for an AI decision.
+* **Delegate**: Captures the cryptographic handover of authority from the user to the AI agent.
+* **Terminate**: Records the definitive task completion and hashes the final output state.
+* **Verify**: Provides a standalone, portable compliance receipt for independent third-party auditing.
 
 ---
 
-## 3. Implementation Facts (工程事实)
+## 3. Multi-Dimensional Anchoring (Implementation Facts)
 
-### A. Mathematical & Physical Anchoring
+### 3A. Mathematical & Physical Anchoring
 
-* **Temporal Fact**: HJS utilizes **UUIDv7**. By embedding a millisecond-precision timestamp into the primary key, it creates a physical sequence that prevents history re-injection—a core requirement for EUSAiR record-keeping.
-* **Integrity Fact**: All judgment events are sealed using **Ed25519** digital signatures. This ensures that any modification to the audit log after the fact will result in a mathematical verification failure.
+* **Temporal Integrity**: HJS utilizes **UUIDv7**. By embedding a millisecond-precision timestamp into the primary key, it creates an irreversible physical sequence, preventing history re-injection.
+* **Cryptographic Seal**: Every judgment event is sealed using **Ed25519** digital signatures. This ensures that any modification to the audit log is mathematically detectable, providing **anti-attack resilience**.
 
-### B. Sovereign & Environmental Fact
+### 3B. Environmental & Sovereign Anchoring
 
-* **Execution Environment**: The HJS Sidecar is deployed within **EU-resident infrastructure** (On-premise or Sovereign Cloud).
-* **Data Minimization**: HJS employs **Optional Anchoring**. Only the **SHA-256 hashes** (fingerprints) are recorded for public auditability, while the raw business payload remains sequestered within the private environment, satisfying both EUSAiR and **GDPR** mandates.
+* **Jurisdictional Control**: The HJS Sidecar is deployed within **EU-resident infrastructure** (On-premise or Sovereign Cloud).
+* **Data Minimization**: Using **Optional Anchoring**, HJS only records **SHA-256 hashes** (fingerprints) for public traceability, while raw business payloads remain strictly local, ensuring **GDPR** compliance.
 
 ---
 
 ## 4. Integration & Operational Efficiency
 
-EUSAiR assessment emphasizes the practical feasibility of compliance:
-
-* **Integration Method**: **Non-Intrusive Sidecar**. Operates as a transparent proxy between the application and the AI model.
-* **Setup Time**: **Standard deployment < 15 minutes** via Docker/K8s.
-* **Zero Model Modification**: No retraining or fine-tuning of the underlying AI (e.g., GPT-4, Llama) is required.
-* **Audit Retrieval**: Native UUIDv7 sorting allows for real-time retrieval of billion-scale records during regulatory inspections.
+* **Integration Method**: **Non-Intrusive Sidecar**. Operates as a transparent proxy between the application and the AI model API.
+* **Deployment Velocity**: Standard setup is achieved in **< 15 minutes** via Docker/K8s.
+* **Accessibility**: Native UUIDv7 sorting enables instant query and retrieval of billion-scale records during regulatory inspections.
+* **Zero Impact**: No retraining or modification of the underlying AI models (e.g., GPT-4, Llama 3) is required.
 
 ---
 
-## 5. Institutional Framework
+## 5. Institutional & Governance Framework
 
-* **Authority**: Managed by **HJS Foundation LTD (Singapore)**.
-* **Legal Structure**: Company Limited by Guarantee (CLG), Non-Profit.
+* **Entity**: Managed by **HJS Foundation LTD (Singapore)**.
+* **Status**: Company Limited by Guarantee (CLG), Non-Profit Public Good.
 * **Transparency**: Open-source protocol and reference implementation.
 
 ---
 
-## 🚀 EUSAiR Auditor Quick Start
+## 6. Evidence Sample & Verification
 
-Verify the cryptographic validity of a compliance receipt locally:
+Every AI interaction generates a **Judgment Receipt** (JSON-LD), ensuring both machine and human readability for Article 14 oversight.
+
+```json
+{
+  "id": "018e1234-5678-7000-8000-1234567890ab",
+  "type": "HJS_JUDGMENT_EVENT",
+  "actor": "ed25519:pubkey_of_ai_proxy",
+  "primitives": ["Judge", "Delegate", "Terminate"],
+  "policy_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e...",
+  "payload_hash": "sha256:8f32c12...",
+  "signature": "base64:cryptographic_signature_over_metadata"
+}
+
+```
+
+### 🚀 Auditor Quick Start
 
 ```bash
-# Execute the compliance demonstration
+# Verify the implementation logic of Article 14
 pip install -r requirements.txt
 python compliance_demo.py
 
 ```
 
-*Prepared for EUSAiR Assessment Phase.* **Foundation Signal:** [signal@humanjudgment.org](mailto:signal@humanjudgment.org)
+---
+
+*Prepared for the EUSAiR Initial Assessment Phase.* **Foundation Contact:** [signal@humanjudgment.org](mailto:signal@humanjudgment.org)
 
 ---
