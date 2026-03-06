@@ -35,4 +35,3 @@ This branch provides a technical baseline for aligning with the **EU AI Act**.
 
 **Cognitive Emergence Lab / HJS Foundation**
 *Contact: signal@humanjudgment.org | Web: [humanjudgment.org*](https://humanjudgment.org)
-```
