@@ -52,17 +52,24 @@ This document outlines how the **HJS Sidecar Architecture** serves as the techni
 
 ---
 
-## 5. Core Philosophy: Institutional Neutrality & Public Good
+5. Core Philosophy: Institutional Neutrality & Public Good
+HJS is not a commercial product; it is a Global Accountability Infrastructure driven by a commitment to digital justice.
 
-HJS is not a commercial product; it is a **Global Accountability Infrastructure** driven by a commitment to digital justice.
+Non-Profit Philosophy: The HJS Protocol is managed by the HJS Foundation LTD (Singapore), a Company Limited by Guarantee (CLG). As a non-profit entity with no shareholders, our philosophy is to maintain the protocol as a neutral utility for all humanity.
 
-* **Non-Profit Philosophy**: The HJS Protocol is managed by the **HJS Foundation LTD (Singapore)**, a Company Limited by Guarantee (CLG). As a non-profit entity with no shareholders, our philosophy is to maintain the protocol as a neutral, third-party utility for all humanity.
-* **Respect for Dual Rights**:
-* **Public Interest**: Our vision is to provide a permanent "Chain of Responsibility" for the safety of the digital society.
-* **Private Sovereignty**: We respect the individual’s right to privacy and the state’s right to digital self-determination as fundamental human rights.
+Separation of Powers (Governance): To ensure absolute integrity, HJS adopts a "Standard vs. Implementation" separation model.
 
+The Foundation focuses exclusively on protocol governance, mathematical standards, and public audit integrity.
 
-* **Open Standard for All**: By keeping the core protocol open-source and foundation-led, HJS ensures that no single corporation or nation can monopolize the "Judgment of AI," making it a true **Global Public Good**.
+Commercial Ecosystems are encouraged to provide professional-grade implementation services (Sidecar deployment, cloud hosting, and support), ensuring the protocol's sustainability without compromising the neutral core.
+
+Respect for Dual Rights:
+
+Public Interest: Providing a permanent "Chain of Responsibility" for the digital society.
+
+Private Sovereignty: Protecting individual privacy and state digital self-determination as fundamental rights.
+
+Global Open Standard: By keeping the core protocol open-source, HJS ensures that no single entity—commercial or sovereign—can monopolize the "Judgment of AI," making it a true Global Public Good.
 
 ---
 
