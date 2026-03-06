@@ -6,10 +6,10 @@ This matrix provides a direct bridge between the legal mandates of the **EU AI A
 
 | **EU AI Act Clause** | **Regulatory Requirement** | **HJS Technical Implementation (View Logic)** | **Verification Evidence (Open File)** |
 | --- | --- | --- | --- |
-| **Article 12** | **Record-keeping** | [Physical Temporal Sequencing via UUIDv7](https://www.google.com/search?q=%23physical) | [IMMUTABILITY_PROOF.md](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/IMMUTABILITY_PROOF.md) |
-| **Article 13** | **Transparency** | [Standardized Metadata Encapsulation (JSON-LD)](https://www.google.com/search?q=%23transparency) | [EU_AI_ACT_MAPPING.md](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/EU_AI_ACT_MAPPING.md) |
-| **Article 14** | **Human Oversight** | [Cryptographic Non-repudiation via Ed25519](https://www.google.com/search?q=%23physical) | **[compliance_demo.py](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/compliance_demo.py)** |
-| **Article 15** | **Robustness & Security** | [Decentralized Sidecar for Local Sovereignty](https://www.google.com/search?q=%23sovereign) | **[HJS_Whitepaper.pdf](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/HJS_Whitepaper_EU_AI_Act_Compliance_v1.0.pdf)** |
+| **Article 12** | **Record-keeping** | [Physical Temporal Sequencing via UUIDv7] | [IMMUTABILITY_PROOF.md](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/IMMUTABILITY_PROOF.md) |
+| **Article 13** | **Transparency** | [Standardized Metadata Encapsulation (JSON-LD)] | [EU_AI_ACT_MAPPING.md](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/EU_AI_ACT_MAPPING.md) |
+| **Article 14** | **Human Oversight** | [Cryptographic Non-repudiation via Ed25519] | **[compliance_demo.py](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/compliance_demo.py)** |
+| **Article 15** | **Robustness & Security** | [Decentralized Sidecar for Local Sovereignty] | **[HJS_Whitepaper.pdf](https://github.com/hjs-spec/eusair-hjs-initial-assessment/blob/main/docs/HJS_Whitepaper_EU_AI_Act_Compliance_v1.0.pdf)** |
 
 ---
 
