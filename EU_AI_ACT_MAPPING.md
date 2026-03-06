@@ -46,7 +46,7 @@ This document outlines how the **JEP Sidecar Architecture** serves as the techni
 
 * **Requirement**: AI systems must achieve an appropriate level of accuracy, robustness, and cybersecurity.
 * **JEP Implementation**: **Decentralized Sidecar Security Model**
-* **Sovereign Protection**: By maintaining a **"Local Compliance Gateway,"** HJS protects a nation's digital boundaries. Even if a global AI provider is compromised, the local state’s **Regulatory Sovereignty** remains intact.
+* **Sovereign Protection**: By maintaining a **"Local Compliance Gateway,"** JEP protects a nation's digital boundaries. Even if a global AI provider is compromised, the local state’s **Regulatory Sovereignty** remains intact.
 
 
 
