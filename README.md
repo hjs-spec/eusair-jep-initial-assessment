@@ -18,7 +18,7 @@ We have bridged the gap between legal requirements and technical execution. The 
 
 ## 🌐 The HJS Multi-Dimensional Anchoring Framework
 Harmonizing Global Intelligence with Physical & Sovereign Reality
-HJS (Human Judgment System) is designed as a Universal Anchoring Layer. We stand on the shoulders of the immense contributions made by AI pioneers and standard-setting bodies (such as OpenAI, IEEE, and ISO), providing the "Final Mile" of technical certainty required for legal and physical accountability.
+HJS is designed as a Universal Anchoring Layer. We stand on the shoulders of the immense contributions made by AI pioneers and standard-setting bodies (such as OpenAI, IEEE, and ISO), providing the "Final Mile" of technical certainty required for legal and physical accountability.
 
 1. Mathematical Anchor: Integrity of Intelligence
 Mechanism: Ed25519 Elliptic Curve Cryptography.
