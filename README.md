@@ -81,5 +81,3 @@ python compliance_demo.py
 
 *Prepared for the EUSAiR Initial Assessment Phase.* **Primary Contact:** [signal@humanjudgment.org](mailto:signal@humanjudgment.org)
 **Legal Entity:** HJS Foundation LTD (Singapore)
-
----
