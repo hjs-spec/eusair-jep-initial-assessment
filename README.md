@@ -214,7 +214,7 @@ print(f'Signature valid: {result}')
 | Content Provenance | Markdown | [`docs/CONTENT_PROVENANCE.md`](https://github.com/hjs-spec/eusair-jep-initial-assessment/blob/main/docs/CONTENT_PROVENANCE.md) | Article 50 implementation |
 | High-Risk Denied Case | JSON | [`scenarios/high_risk_denied.json`](https://github.com/hjs-spec/eusair-jep-initial-assessment/blob/main/scenarios/high_risk_denied.json) | Real-world rejection example |
 | Standard Approved Case | JSON | [`scenarios/standard_op_approved.json`](https://github.com/hjs-spec/eusair-jep-initial-assessment/blob/main/scenarios/standard_op_approved.json) | Real-world approval example |
-| Whitepaper | PDF | [`docs/JEP_Whitepaper_EU_AI_Act_Compliance_v1.0.pdf`](https://github.com/hjs-spec/eusair-jep-initial-assessment/blob/main/docs/JEP_Whitepaper_EU_AI_Act_Compliance_v1.0.pdf) | Complete architecture |
+| Whitepaper | PDF | [`docs/JEP_Whitepaper_EU_AI_Act_Compliance_v1.0.pdf`](https://github.com/hjs-spec/eusair-jep-initial-assessment/blob/main/docs/JEP_Whitepaper_EU_AI_Act_Compliance_v1.0.pdf.pdf) | Complete architecture |
 | API Reference | Markdown | [`docs/API_REFERENCE.md`](https://github.com/hjs-spec/eusair-jep-initial-assessment/blob/main/docs/API_REFERENCE.md) | Technical documentation |
 | Quick Start | Markdown | [`docs/QUICK_START.md`](https://github.com/hjs-spec/eusair-jep-initial-assessment/blob/main/docs/QUICK_START.md) | Implementation guide |
 | Change Log | Markdown | [`CHANGELOG.md`](https://github.com/hjs-spec/eusair-jep-initial-assessment/blob/main/CHANGELOG.md) | Version history |
