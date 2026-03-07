@@ -215,3 +215,253 @@ if __name__ == "__main__":
     print(f"总体状态: {tampered_verification['overall_status']}")
     for check in tampered_verification['checks']:
         print(f"  - {check['name']}: {check['status']}")
+```
+
+---
+
+## 3. 证据示例
+
+### 3.1 AI生成文本标记示例
+
+创建示例文件 `ai_generated_text_example.json`：
+
+```json
+{
+  "scenario": "AI生成客服回复",
+  "input": {
+    "user_query": "如何重置密码？",
+    "model": "gpt-4",
+    "generator": "agent-customer-service-v2"
+  },
+  "output": {
+    "content": "您好！要重置密码，请点击登录页面的'忘记密码'链接，按照邮件指示操作。如有问题，请联系支持团队。",
+    "provenance": {
+      "content_id": "jep_0195f6d8-1234-7123-8abc-9def01234567",
+      "content_hash": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0",
+      "content_type": "text",
+      "is_ai_generated": true,
+      "generated_at": "2026-03-07T14:30:00Z",
+      "model": {
+        "name": "gpt-4",
+        "version": "1.0"
+      },
+      "generator_id": "agent-customer-service-v2",
+      "policy_uri": "https://jep-protocol.org/eu/transparency-v1.jep",
+      "policy_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4...",
+      "signature": "ed25519:MCowBQYDK2VwAyEAvVp8eN4fKxZ9gH2jK3mR7qT5wX1yB6nC8dE9fA0bS4c"
+    },
+    "machine_readable": {
+      "@context": "https://jep-protocol.org/context/v1",
+      "@type": "AIGeneratedContent",
+      "contentId": "jep_0195f6d8-1234-7123-8abc-9def01234567",
+      "isAIGenerated": true,
+      "generatedAt": "2026-03-07T14:30:00Z",
+      "model": "gpt-4"
+    }
+  }
+}
+```
+
+### 3.2 验证结果示例
+
+```json
+{
+  "verification_id": "jep_0195f6d8-8765-4321-8def-0123456789ab",
+  "verified_at": "2026-03-07T14:31:00Z",
+  "content_id": "jep_0195f6d8-1234-7123-8abc-9def01234567",
+  "overall_status": "VALID",
+  "checks": [
+    {
+      "name": "签名验证",
+      "status": "PASSED",
+      "message": "签名有效"
+    },
+    {
+      "name": "内容完整性",
+      "status": "PASSED",
+      "message": "内容未被篡改"
+    },
+    {
+      "name": "AI生成标记",
+      "status": "PASSED",
+      "message": "已标记为AI生成"
+    }
+  ]
+}
+```
+
+---
+
+## 4. 集成到现有系统
+
+### 4.1 在AI服务中添加内容溯源
+
+```python
+# 在您的AI服务中集成
+from content_provenance import AIContentProvenance
+from ai_compliance_integration import AIComplianceTracker
+
+class AIServiceWithProvenance:
+    """集成操作追溯和内容溯源的AI服务"""
+    
+    def __init__(self):
+        self.compliance_tracker = AIComplianceTracker()
+        self.provenance_tracker = AIContentProvenance()
+    
+    def generate_response(self, user_query, user_id):
+        """生成AI回复并添加合规记录"""
+        
+        # 1. AI生成回复
+        response = self._call_ai_model(user_query)
+        
+        # 2. 记录操作（Article 12/14）
+        context = self.compliance_tracker.assess_decision(
+            operation="GENERATE",
+            resource="USER_QUERY",
+            actor_id=f"agent-{user_id}",
+            policy_name="ai-response-policy.jep",
+            policy_hash="e3b0c44298fc1c149..."
+        )
+        operation_receipt = self.compliance_tracker.log_decision(context, "APPROVED")
+        
+        # 3. 标记内容（Article 50）
+        content_provenance = self.provenance_tracker.mark_content(
+            content=response,
+            content_type="text",
+            model_info={"name": "gpt-4", "version": "1.0"},
+            generator_id=context["actor_id"]
+        )
+        
+        return {
+            "response": response,
+            "operation_receipt": operation_receipt,
+            "content_provenance": content_provenance
+        }
+```
+
+---
+
+## 5. 合规性验证
+
+### 5.1 运行验证脚本
+
+创建 `verify_article50.py`：
+
+```python
+#!/usr/bin/env python3
+"""
+Article 50 透明度义务验证脚本
+"""
+
+import json
+from content_provenance import AIContentProvenance
+
+def verify_article50_compliance():
+    """验证系统是否满足Article 50要求"""
+    
+    print("="*60)
+    print("EU AI Act Article 50 合规性验证")
+    print("="*60)
+    
+    tracker = AIContentProvenance()
+    
+    # 测试1: 标记功能
+    print("\n1. 测试内容标记功能")
+    result = tracker.mark_content(
+        content="测试内容",
+        content_type="text",
+        model_info={"name": "test-model"},
+        generator_id="test-agent"
+    )
+    
+    checks = [
+        ("内容ID存在", "content_id" in result["provenance"]),
+        ("AI生成标记", result["provenance"].get("is_ai_generated") == True),
+        ("签名存在", "signature" in result["provenance"]),
+        ("机器可读标记", "machine_readable" in result),
+        ("机器可读格式", "@context" in result["machine_readable"])
+    ]
+    
+    for name, passed in checks:
+        print(f"  - {name}: {'✅' if passed else '❌'}")
+    
+    # 测试2: 验证功能
+    print("\n2. 测试内容验证功能")
+    verification = tracker.verify_content(
+        content="测试内容",
+        provenance=result["provenance"].copy()
+    )
+    print(f"  验证状态: {verification['overall_status']}")
+    
+    # 测试3: 篡改检测
+    print("\n3. 测试篡改检测")
+    tampered = tracker.verify_content(
+        content="篡改后的内容",
+        provenance=result["provenance"].copy()
+    )
+    print(f"  篡改检测: {'✅ 成功' if tampered['overall_status']=='INVALID' else '❌ 失败'}")
+    
+    print("\n" + "="*60)
+    print("验证完成")
+    print("="*60)
+
+if __name__ == "__main__":
+    verify_article50_compliance()
+```
+
+### 5.2 预期输出
+
+```
+============================================================
+EU AI Act Article 50 合规性验证
+============================================================
+
+1. 测试内容标记功能
+  - 内容ID存在: ✅
+  - AI生成标记: ✅
+  - 签名存在: ✅
+  - 机器可读标记: ✅
+  - 机器可读格式: ✅
+
+2. 测试内容验证功能
+  验证状态: VALID
+
+3. 测试篡改检测
+  篡改检测: ✅ 成功
+
+============================================================
+验证完成
+============================================================
+```
+
+---
+
+## 6. 与EU AI ACT MAPPING的集成
+
+更新 `EU_AI_ACT_MAPPING.md`，添加Article 50映射：
+
+```markdown
+| 欧盟人工智能法案条款 | 监管要求 | JEP技术实现 | 核实证据 |
+|----------------------|----------|-------------|----------|
+| 第五十条 | AI生成内容透明度 | [UUIDv7内容ID + Ed25519签名 + JSON-LD标记] | CONTENT_PROVENANCE.md, ai_generated_text_example.json |
+```
+
+---
+
+## 7. 附录
+
+### A. 术语表
+
+| 术语 | 定义 |
+|------|------|
+| **内容溯源** | 追踪AI生成内容来源和真实性的技术 |
+| **机器可读标记** | 可被自动化工具解析的标记格式（如JSON-LD） |
+| **内容指纹** | 基于哈希的内容唯一标识 |
+| **深度伪造** | AI生成的虚假音视频内容 |
+
+### B. 参考文献
+
+1. EU AI Act Article 50 - Transparency obligations for AI systems
+2. RFC 9562 - UUID Version 7
+3. RFC 8032 - Ed25519 Signature Algorithm
+4. JSON-LD 1.1 - W3C Recommendation
