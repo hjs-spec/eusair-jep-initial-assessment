@@ -1,5 +1,28 @@
 # Technical Reference for EU AI Act Sandbox Assessment 🇪🇺
 
+## EUSAiR Demo: Four Complete Compliance Cases
+
+We have prepared four runnable use cases specifically for the EUSAiR project, demonstrating JEP's compliance with the EU AI Act across multiple domains.
+
+| Case | Domain | Key EU AI Act Articles | Location |
+|------|--------|------------------------|----------|
+| **Case 1** | Cross-Border Loan Approval | Art. 6, 14, 15, 52 | [`eusair-demo/case1-finance/`](https://github.com/hjs-spec/eusair-jep-initial-assessment/tree/main/eusair-demo/case1-finance) |
+| **Case 2** | Cross-Border Medical Diagnosis | Annex III, Art. 10, 11, 14, 52 | [`eusair-demo/case2-healthcare/`](https://github.com/hjs-spec/eusair-jep-initial-assessment/tree/main/eusair-demo/case2-healthcare) |
+| **Case 3** | Cross-Border Traffic Coordination | Annex III, Art. 27, 43, 60, 14 | [`eusair-demo/case3-transport/`](https://github.com/hjs-spec/eusair-jep-initial-assessment/tree/main/eusair-demo/case3-transport) |
+| **Case 4** | Generative AI Content Transparency | Art. 28b, 50, 52, 53, 14 | [`eusair-demo/case4-generative-ai/`](https://github.com/hjs-spec/eusair-jep-initial-assessment/tree/main/eusair-demo/case4-generative-ai) |
+
+**Quick Start**:
+```bash
+# Run all four cases
+cd eusair-demo
+chmod +x verify-all.sh
+./verify-all.sh
+```
+
+Each case includes scenario descriptions, input data, EU AI Act mapping, and verification scripts.
+
+---
+
 ## 1. Regulatory Compliance Matrix
 
 | **EU AI Act Article** | **Requirement** | **JEP Implementation** | **Evidence Location** |
@@ -230,6 +253,12 @@ eusair-jep-initial-assessment/
 ├── 📂 scenarios/                # Real-world JSON cases
 ├── 📂 src/                      # Source code
 │   └── 📂 aip_jep/              # Core implementation
+├── 📂 eusair-demo/              # Four complete use cases
+│   ├── case1-finance/           # Loan approval
+│   ├── case2-healthcare/        # Medical diagnosis
+│   ├── case3-transport/         # Traffic coordination
+│   ├── case4-generative-ai/     # Content transparency
+│   └── verify-all.sh            # Master verification script
 ├── 📄 CHANGELOG.md              # Version history
 ├── 📄 LICENSE                    # Apache-2.0
 ├── 📄 README.md                  # Overview
@@ -333,6 +362,10 @@ cat EVIDENCE/EVIDENCE_SNAPSHOT.json
 
 # 6. Review foundation governance
 cat docs/GOVERNANCE_CHARTER.md
+
+# 7. Run all four EUSAiR demo cases
+cd eusair-demo
+./verify-all.sh
 ```
 
 ---
@@ -362,4 +395,5 @@ cat docs/GOVERNANCE_CHARTER.md
 ---
 
 *All evidence files are publicly accessible and cryptographically verifiable. The protocol is designed to serve public accountability, not commercial interests.*
-```
+
+---
