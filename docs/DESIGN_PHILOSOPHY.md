@@ -209,7 +209,7 @@ See full details: [`GOVERNANCE_CHARTER.md`](GOVERNANCE_CHARTER.md)
 
 ## 6. References
 
-- [JEP IETF Draft](https://datatracker.ietf.org/doc/draft-wang-jep-judgment-event/)
+- [JEP IETF Draft](https://datatracker.ietf.org/doc/draft-wang-hjs-judgment-event/)
 - [RFC 8032: Ed25519](https://datatracker.ietf.org/doc/html/rfc8032)
 - [RFC 9562: UUIDv7](https://datatracker.ietf.org/doc/html/rfc9562)
 - [JSON-LD W3C Standard](https://www.w3.org/TR/json-ld11/)
