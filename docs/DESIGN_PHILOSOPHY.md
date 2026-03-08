@@ -161,11 +161,102 @@ The same structured output maps to any regulatory framework:
 | 🇸🇬 **Singapore Agentic Framework** | [`jep-singapore-solutions`](https://github.com/hjs-spec/jep-singapore-solutions) |
 | 🇰🇷 **Korea AI Basic Act** | [`jep-kr-solutions`](https://github.com/hjs-spec/jep-kr-solutions-) |
 
-**Proof**: The same protocol serves three完全不同 frameworks without modification.
+**Proof**: The same protocol serves three completely different frameworks without modification.
 
 ---
 
-## 4. Governed for Neutrality
+## 4. Privacy by Design — Accountability Without Exposure
+
+A language that exposes private information is unusable in the real world. JEP is designed from first principles to enable **full accountability without violating privacy**.
+
+### 4.1 Minimal Information Principle — Only What's Necessary
+
+Every JEP receipt contains only the fields required to prove responsibility:
+
+| Field | Contains | Does NOT Contain |
+|-------|----------|------------------|
+| **Identity** | Agent ID, responsible party ID | Real names, personal identifiers |
+| **Authority** | Delegation chain (who authorized whom) | Context of conversations, personal history |
+| **Decision fact** | Decision type, timestamp, receipt hash | Input data, user preferences, model internals |
+| **Signature** | Cryptographic proof | Private keys, sensitive credentials |
+
+This aligns with GDPR's "data minimization" principle (Article 5(1)(c)) — processing only the personal data necessary for the specific purpose.
+
+### 4.2 Zero-Knowledge Verification — Prove Without Revealing
+
+The `verify` primitive enables independent attestation **without exposing sensitive data**:
+
+```python
+# A regulator can verify the integrity of the entire chain
+is_valid = jep.verify_chain(receipt_chain)
+
+# Without ever accessing:
+# - The specific loan applicant's income
+# - The medical patient's diagnosis details
+# - The proprietary model parameters
+# - The user's personal conversation history
+```
+
+This is conceptually similar to Merkle proofs in blockchain — you can prove a transaction exists without revealing every transaction in the chain.
+
+### 4.3 Selective Disclosure — Payload Can Be Encrypted
+
+Receipts support encrypted payload fields, leveraging the algorithm-agnostic design described in Section 2.3:
+
+```json
+{
+  "receipt_id": "jep_0195f6d8-1234-7123-8abc-9def01234567",
+  "event_type": "judge",
+  "judge_id": "HospitalAI",
+  "timestamp": "2026-03-08T09:30:00Z",
+  "signature": "0x7a8b9c...",
+  "payload_encrypted": "0x4e5f6a...",  // Only decryptable by authorized parties
+  "payload_metadata": {                  // Always visible metadata
+    "contains_pii": true,
+    "decryptor_ids": ["regulator@msit.kr", "auditor@hospital.kr"]
+  }
+}
+```
+
+This enables:
+- **Default privacy**: Sensitive factors are encrypted by default
+- **Audit access**: Regulators receive decryption keys
+- **User control**: Individuals can see data about themselves
+
+### 4.4 No Central Database — Distributed by Design
+
+JEP does not require a central repository of all receipts:
+
+- Receipts can be stored by the responsible party
+- Verification only requires checking the signature chain
+- No single point of data leakage
+- Compliant with data localization requirements
+
+This design respects **data sovereignty** — receipts can stay within jurisdictional boundaries while still being verifiable globally.
+
+### 4.5 Alignment with Global Privacy Frameworks
+
+| Requirement | GDPR | CCPA | JEP Implementation |
+|-------------|------|------|---------------------|
+| **Data minimization** | Art. 5(1)(c) | Cal. Civ. Code §1798.100 | Receipts contain only responsibility fields |
+| **Purpose limitation** | Art. 5(1)(b) | §1798.100 | Receipts used only for accountability |
+| **Storage limitation** | Art. 5(1)(e) | — | No mandatory central storage |
+| **Integrity & confidentiality** | Art. 5(1)(f) | §1798.81.5 | Signatures + optional encryption |
+| **Transparency** | Art. 5(1)(a) | §1798.110 | Public receipt format, open verification |
+| **Individual rights** | Art. 15-22 | §1798.130 | Users can verify receipts about themselves |
+
+### 4.6 Built on IETF Standards for Security and Uniqueness
+
+JEP's privacy-preserving design is built on solid IETF foundations:
+
+- **UUIDv7 (RFC 9562)** provides timestamp-based unique identifiers without exposing MAC addresses — addressing the privacy concerns that motivated the creation of UUIDv7 (see Section 2.1 of RFC 9562: "Privacy and network security issues arise from using a Media Access Control (MAC) address in the node field of UUIDv1. Exposed MAC addresses can be used as an attack surface...")
+- **Ed25519 (RFC 8032)** ensures non-repudiation without revealing any additional information about the signer
+
+This combination allows JEP to guarantee uniqueness and authenticity while minimizing the exposure of potentially identifying information.
+
+---
+
+## 5. Governed for Neutrality
 
 A language cannot be owned by any single company. JEP is governed by:
 
@@ -192,7 +283,7 @@ See full details: [`GOVERNANCE_CHARTER.md`](GOVERNANCE_CHARTER.md)
 
 ---
 
-## 5. Summary: The Complete Picture
+## 6. Summary: The Complete Picture
 
 | Design Choice | What It Enables |
 |---------------|-----------------|
@@ -200,6 +291,10 @@ See full details: [`GOVERNANCE_CHARTER.md`](GOVERNANCE_CHARTER.md)
 | **Ed25519 signatures** | Non-repudiation, tamper-proof evidence |
 | **UUIDv7** | Temporal ordering, billion-scale audit |
 | **Algorithm-agnostic** | Future-proof, quantum-resistant |
+| **Minimal information** | Collect only necessary responsibility fields |
+| **Zero-knowledge verification** | Prove without exposing sensitive data |
+| **Selective disclosure** | Encrypt payload, control access |
+| **No central database** | Distributed, data sovereignty respected |
 | **Model-agnostic** | Zero modification to existing AI |
 | **Jurisdiction-agnostic** | Deploy anywhere, sovereignty respected |
 | **Framework-agnostic** | One language, multiple regulations |
@@ -207,36 +302,19 @@ See full details: [`GOVERNANCE_CHARTER.md`](GOVERNANCE_CHARTER.md)
 
 ---
 
-## 6. References
+## 7. References
 
 - [JEP IETF Draft](https://datatracker.ietf.org/doc/draft-wang-hjs-judgment-event/)
 - [RFC 8032: Ed25519](https://datatracker.ietf.org/doc/html/rfc8032)
 - [RFC 9562: UUIDv7](https://datatracker.ietf.org/doc/html/rfc9562)
 - [JSON-LD W3C Standard](https://www.w3.org/TR/json-ld11/)
+- [GDPR Article 5: Principles relating to processing of personal data](https://gdpr-info.eu/art-5-gdpr/)
+- [CCPA: California Consumer Privacy Act](https://oag.ca.gov/privacy/ccpa)
 
 ---
 
 **Document History**
 - 2026-03-08: Initial version for EUSAiR submission
+- 2026-03-08: Added Privacy by Design section
 
 *This design philosophy is implemented in all JEP code and documentation. Every design choice is reflected in the protocol.*
-```
-
----
-
-## 📄 在 `README.md` 增加入口
-
-在合适位置（比如在“1. Regulatory Compliance Matrix”之前）增加：
-
-```markdown
-## 📚 Design Philosophy
-
-Before diving into the technical details, we encourage you to read our **[Design Philosophy](docs/DESIGN_PHILOSOPHY.md)** — it explains the foundational choices behind JEP:
-
-- **Four primitives** — Why `judge`/`delegate`/`terminate`/`verify` are the complete grammar of accountability
-- **Cryptographic trust** — How Ed25519 + UUIDv7 make evidence tamper-proof and future-proof
-- **Maximum compatibility** — How one language serves multiple models, jurisdictions, and frameworks
-- **Neutral governance** — Why a non-profit foundation with 1/3 independent directors ensures long-term neutrality
-
-[➡️ Read the Design Philosophy](docs/DESIGN_PHILOSOPHY.md)
-```
