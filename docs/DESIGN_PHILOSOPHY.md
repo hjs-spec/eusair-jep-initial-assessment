@@ -159,7 +159,7 @@ The same structured output maps to any regulatory framework:
 |-----------|-------------------|
 | 🇪🇺 **EU AI Act** | Four use cases in this repository |
 | 🇸🇬 **Singapore Agentic Framework** | [`jep-singapore-solutions`](https://github.com/hjs-spec/jep-singapore-solutions) |
-| 🇰🇷 **Korea AI Basic Act** | [`jep-kr-solutions`](https://github.com/hjs-spec/jep-kr-solutions) |
+| 🇰🇷 **Korea AI Basic Act** | [`jep-kr-solutions`](https://github.com/hjs-spec/jep-kr-solutions-) |
 
 **Proof**: The same protocol serves three完全不同 frameworks without modification.
 
